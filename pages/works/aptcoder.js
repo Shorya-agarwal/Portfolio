@@ -14,10 +14,10 @@ import {
     <Layout title="Aptcoder">
       <Container>
         <Title>
-          Full Stack Developer Intern <Badge>May 2022-</Badge>
+          Full Stack Developer Intern <Badge>May 2022 - Present</Badge>
         </Title>
         <P>
-          It's an Ed-Tech StartUp by IIT Bombay and IIM Lucknow Students. They Focus on teaching coding to school students with a staff of around 15-30 people.
+          It's an Ed-Tech StartUp by IIT Bombay and IIM Lucknow Alumunus.They Focus on teaching coding to school students with a staff of around 15-30 people.
         </P>
         <P>
 <br/>• Created and Maintained a LMS website for 500+ registered students. <br/>
@@ -35,7 +35,7 @@ Materialize.<br/>
           </ListItem>
           <ListItem>
             <Meta>Technologies Used</Meta>
-            <span>Django , Pyhthon , WWordpress , React Js , Node JS</span>
+            <span>Django , Python , Wordpress , React Js , Node JS</span>
           </ListItem>
         </List>
   

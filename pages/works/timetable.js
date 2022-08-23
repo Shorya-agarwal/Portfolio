@@ -18,9 +18,9 @@ const Work = () => (
         Time Table Generator <Badge>Aug , 2020</Badge>
       </Title>
       <P>
-        An automatic time table generator in Python. Where there are some real constrinats including no two teachers can take the same class or different class in the same room. A teacher can't be in two classes at the same time etc ... <br/>
+        An automatic time table generator in Python. Where there are some real constraints including no two teachers can take the same class or different class in the same room. A teacher can't be in two classes at the same time etc ... <br/>
         It's a terminal Python program which prints the most optimized time table.
-        I have strarted working it to take it next level by adding user interface to it and probably putting it on web and deploying it.
+        I have started working it to take it next level by adding user interface to it and probably putting it on web and deploying it.
       </P>
       <List ml={4} my={4}>
         <ListItem>

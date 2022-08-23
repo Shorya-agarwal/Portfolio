@@ -18,7 +18,7 @@ const Work = () => (
       </Title>
       <P>
        Face Detector is a web app based on react. Here the motive was to integrate tensorflow model or Python with React or any other frontend.<br/>
-       I used trnsorflowJs Library of Javascript to access the face recognition model of it than display it on the webPage after i deployed it on Heroku.
+       I used tensorflowJs Library of Javascript to access the face recognition model of it than display it on the webPage after that i deployed it on Heroku.
       </P>
 
       <List ml={4} my={4}>
@@ -34,8 +34,8 @@ const Work = () => (
         </ListItem>
         <ListItem>
           <Meta>Git Repo Link</Meta>
-          <Link href="https://speakerdeck.com/craftzdog/caffedeoshou-qing-ben-ge-deipuraninguiosapuri">
-            Caffeでお手軽本格ディープラーニングアプリ @potatotips{' '}
+          <Link href="https://github.com/Shorya-agarwal/facedetector-react">
+            Source Code
             <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>

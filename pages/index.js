@@ -43,7 +43,7 @@ const Home = () => (
           <Heading as="h2" variant="page-title">
             Shorya Agarwal
           </Heading>
-          <p>Software Developer / Full Staack Developer</p>
+          <p>Software Developer</p>
         </Box>
         <Box
           flexShrink={0}
@@ -79,7 +79,7 @@ const Home = () => (
         <Paragraph>
           Shorya is a full-stack developer based in India with a
           passion for building full stack web apps he wants. He has a knack
-          for robitcs and different microcontrollers, from planning and designing all the
+          for robotics and different microcontrollers, from planning and designing all the
           way to solving real-life problems with code. When not online, he loves watching movies.
            {/* Currently, he is living off of his own
           product called{' '}
@@ -113,7 +113,7 @@ const Home = () => (
         <BioSection>
         {/* Master&apos;s */}
           <BioYear>2020                                                                          </BioYear>
-          Completed the Schooling till class 12th from Sayed Hamid Senior Secondary School Boys, Aliagrh MUslim University
+          Completed the Schooling till class 12th from Sayed Hamid Senior Secondary School Boys, Aligarh Muslim University
         </BioSection>
         {/* <BioSection>
           <BioYear>2020</BioYear>
