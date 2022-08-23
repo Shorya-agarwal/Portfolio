@@ -1,10 +1,3 @@
-# Takuya's Homepage
-
-[https://www.craftz.dog/](https://www.craftz.dog/)
-
-## Tutorial
-
-
 ## Stack
 
 - [Next.js](https://nextjs.org/) - A React framework with hybrid static & server rendering, and route pre-fetching, etc.
