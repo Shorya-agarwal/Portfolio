@@ -1,5 +1,7 @@
 import Logo from './logo'
 import NextLink from 'next/link'
+import React from 'react'
+import { saveAs } from "file-saver";
 import {
   Container,
   Box,
@@ -35,7 +37,13 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
     </NextLink>
   )
 }
-
+const saveFile = () => {
+  saveAs(
+    // "./public/ShoryaAgarwalresume.pdf",
+    "https://drive.google.com/file/d/1vFGgXpx3pERCPFm1l_zn68US4Un8d2rX/view?usp=sharing",
+    "example.pdf"
+  );
+};
 const Navbar = props => {
   const { path } = props
 
@@ -74,21 +82,7 @@ const Navbar = props => {
           <LinkItem href="/works" path={path}>
             Works
           </LinkItem>
-          {/* <LinkItem href="/posts" path={path}>
-            Posts
-          </LinkItem> */}
-          {/* <LinkItem
-            target="_blank"
-            href="https://github.com/craftzdog/craftzdog-homepage"
-            path={path}
-            display="inline-flex"
-            alignItems="center"
-            style={{ gap: 4 }}
-            pl={2}
-          >
-            <IoLogoGithub />
-            Source
-          </LinkItem> */}
+          <button onClick={saveFile}>View Resume</button>
         </Stack>
 
         <Box flex={1} align="right">
@@ -109,6 +103,7 @@ const Navbar = props => {
                 <NextLink href="/works" passHref>
                   <MenuItem as={Link}>Works</MenuItem>
                 </NextLink>
+               <MenuItem> <button onClick={saveFile}>View Resume</button> </MenuItem>
                 {/* <NextLink href="/posts" passHref>
                   <MenuItem as={Link}>Posts</MenuItem>
                 </NextLink> */}

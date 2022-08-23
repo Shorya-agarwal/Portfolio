@@ -15,7 +15,7 @@ import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
-import {IoLogoInstagram, IoLogoGithub } from 'react-icons/io5'
+import {IoLogoInstagram, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 import Image from 'next/image'
 
 const ProfileImage = chakra(Image, {
@@ -24,10 +24,9 @@ const ProfileImage = chakra(Image, {
 
 const Home = () => (
   <Layout>
-    <Container>
+    <Container maxW  = 'container.sm'>
       <Box
         borderRadius="lg"
-        w='470px'
         mb={6}
         mr = {3}
         p={2.5}
@@ -108,12 +107,12 @@ const Home = () => (
           Bio
         </Heading>
         <BioSection>
-          <BioYear>2002</BioYear>
+          <BioYear>2002                                                                          </BioYear>
           Born in Aligarh , Uttar Pradesh India
         </BioSection>
         <BioSection>
         {/* Master&apos;s */}
-          <BioYear>2020</BioYear>
+          <BioYear>2020                                                                          </BioYear>
           Completed the Schooling till class 12th from Sayed Hamid Senior Secondary School Boys, Aliagrh MUslim University
         </BioSection>
         {/* <BioSection>
@@ -122,7 +121,7 @@ const Home = () => (
         </BioSection> */}
         <BioSection>
           <BioYear>2020 to present</BioYear>
-          Started My graduation in Bachelor Of technology with compters as major
+          Started My graduation in Bachelor Of technology with Computer Enginenring as major
         </BioSection>
       </Section>
 
@@ -131,7 +130,7 @@ const Home = () => (
           I ♥
         </Heading>
         <Paragraph>
-          Art, Music,
+          Movies, Music,
             Photography
           , Robotics, Machine Learning, Technology
         </Paragraph>
@@ -153,18 +152,18 @@ const Home = () => (
               </Button>
             </Link>
           </ListItem>
-          {/* <ListItem>
-            <Link href="https://twitter.com/inkdrop_app" target="_blank">
+          <ListItem>
+            <Link href="https://www.linkedin.com/in/shorya-agarwal-7b1751218/" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
-                leftIcon={<IoLogoTwitter />}
+                leftIcon={<IoLogoLinkedin />}
               >
-                @inkdrop_app (English)
+                Shorya-agarwal
               </Button>
             </Link>
           </ListItem>
-          <ListItem>
+          {/* <ListItem>
             <Link href="https://twitter.com/craftzdog" target="_blank">
               <Button
                 variant="ghost"
