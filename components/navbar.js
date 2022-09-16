@@ -40,7 +40,7 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
 const saveFile = () => {
   saveAs(
     // "./public/ShoryaAgarwalresume.pdf",
-    "https://drive.google.com/file/d/1vFGgXpx3pERCPFm1l_zn68US4Un8d2rX/view?usp=sharing",
+    "https://drive.google.com/file/d/1IiKj8zYNMc-KPQzrr-6xMdZTai8GOxKi/view?usp=sharing",
     "example.pdf"
   );
 };
