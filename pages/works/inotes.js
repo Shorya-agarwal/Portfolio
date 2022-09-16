@@ -23,7 +23,7 @@ const Work = () => (
       <List ml={4} my={4}>
         <ListItem>
           <Meta>Platform</Meta>
-          <span>WEbApp deployed on Heroku</span>
+          <span>WebApp deployed on Heroku</span>
         </ListItem>
         <ListItem>
           <Meta>Stack</Meta>

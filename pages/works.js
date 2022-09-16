@@ -18,7 +18,7 @@ const Works = () => (
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
         <Section>
           <WorkGridItem id="aptcoder" title="Internship" thumbnail={Ilogo}>
-            Works as a Full Stack Developer Intern there. Started in May-2022 to Present.
+            Works as a Full Stack Developer Intern there. Started in May-2022.
           </WorkGridItem>
         </Section>
         <Section>

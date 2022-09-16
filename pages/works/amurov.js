@@ -43,9 +43,16 @@ const Work = () => (
         </ListItem>
 
         <ListItem>
-          <Link href="http://www.appbank.net/2011/10/15/iphone-application/309349.php">
-            <Badge mr={2}>Detailed Report of my work in team</Badge>
+          <Link href="https://drive.google.com/file/d/1DBNYRmtDQpAQj0WmH6kISC3cbUcfxc1Q/view?usp=drivesdk">
+            <Badge mr={2}>Detailed Report of my work</Badge>
             Computer team Work Report. 
+            <ExternalLinkIcon mx="2px" />
+          </Link>
+        </ListItem>
+        <ListItem>
+          <Link href="https://drive.google.com/file/d/17vMPMMwyVv85F5yrv8XJkCTUaIv-GyzX/view?usp=drivesdk">
+            <Badge mr={2}>Demonstration</Badge>
+            Video demonstration 
             <ExternalLinkIcon mx="2px" />
           </Link>
         </ListItem>
@@ -69,6 +76,7 @@ const Work = () => (
       <WorkImage src="/images/works/rovc1.jpg" alt="walknote" />
       <WorkImage src="/images/works/rovc2.jpg" alt="walknote" />
       <WorkImage src="/images/works/rovc3.jpg" alt="walknote" />
+      <WorkImage src="/images/team hustlers 1.jpg" alt="walknote" />
     </Container>
   </Layout>
 )
