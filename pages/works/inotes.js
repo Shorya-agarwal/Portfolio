@@ -4,7 +4,6 @@ import {
   Link,
   List,
   ListItem,
-  SimpleGrid,
   Divider
 } from '@chakra-ui/react'
 import Layout from '../../components/layouts/article'
