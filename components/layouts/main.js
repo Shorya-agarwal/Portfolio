@@ -4,10 +4,16 @@ import NavBar from '../navbar'
 import { Box, Container } from '@chakra-ui/react'
 import Footer from '../footer'
 import VoxelDogLoader from '../voxel-dog-loader'
+import NetworkBackgroundLoader from '../network-background-loader'
 
 const LazyVoxelDog = dynamic(() => import('../voxel-dog'), {
   ssr: false,
   loading: () => <VoxelDogLoader />
+})
+
+const LazyNetworkBackground = dynamic(() => import('../network-background'), {
+  ssr: false,
+  loading: () => <NetworkBackgroundLoader />
 })
 
 const Main = ({ children, router }) => {
@@ -28,7 +34,9 @@ const Main = ({ children, router }) => {
 
       <NavBar path={router.asPath} />
 
-      <Container maxW="container.md" pt={14}>
+      <LazyNetworkBackground />
+
+      <Container maxW="container.xl" pt={14}>
         <LazyVoxelDog />
 
         {children}

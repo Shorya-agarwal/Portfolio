@@ -1,67 +1,36 @@
-import { Container, Heading, SimpleGrid, Divider } from '@chakra-ui/react'
+import { Container, Heading, SimpleGrid, Divider, Box, Text } from '@chakra-ui/react'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
 import { WorkGridItem } from '../components/grid-item'
-import Ilogo from '../public/images/internlogo.jpg'
-import thumbrov from '../public/images/works/rovc4.jpeg'
-import thumbnote from '../public/images/inotes.png'
-import thumbface from '../public/images/face.jpg'
-import thumbtime from '../public/images/ttg.png'
+import { worksData } from '../lib/works-data'
 
 const Works = () => (
   <Layout title="Works">
-    <Container maxW  = 'container.sm'>
+    <Container maxW="container.lg">
       <Heading as="h3" fontSize={20} mb={4}>
         Works
       </Heading>
 
       <SimpleGrid columns={[1, 1, 2]} gap={6}>
-        <Section>
-          <WorkGridItem id="aptcoder" title="Internship" thumbnail={Ilogo}>
-            Works as a Full Stack Developer Intern there. Started in May-2022.
-          </WorkGridItem>
-        </Section>
-        <Section>
-          <WorkGridItem
-            id="amurov"
-            title="AMUROVc"
-            thumbnail={thumbrov}
-          >
-            A National Level Underwater Robotics Challenge
-          </WorkGridItem>
-        </Section>
-
-        <Section delay={0.1}>
-          <WorkGridItem
-            id="timetable"
-            title="Time Table Generator"
-            thumbnail={thumbtime}
-          >
-            Automatic Time table generator Using Genetic Algorithm.
-          </WorkGridItem>
-        </Section>
-        <Section delay={0.1}>
-          <WorkGridItem id="facerecognizer" thumbnail={thumbface} title="Face-Detector">
-          A Web app using react for live face detection
-          </WorkGridItem>
-        </Section>
-        <Section>
-          <WorkGridItem
-            id="inotes"
-            title="iNotes"
-            thumbnail={thumbnote}
-          >
-            A Notes app where you can store your notes on the cloud developed on MERN Stack.
-          </WorkGridItem>
+        {worksData.map((work, index) => (
+          <Section delay={index * 0.1} key={work.id}>
+            <WorkGridItem id={work.id} title={work.title} thumbnail={work.thumbnail}>
+              {work.description}
+            </WorkGridItem>
+            <Box mt={2}>
+              {work.stack.map(tech => (
+                <Text key={tech} as="span" fontSize="xs" color="gray.500" mr={2}>
+                  #{tech}
+                </Text>
+              ))}
+            </Box>
           </Section>
+        ))}
       </SimpleGrid>
 
       <Section delay={0.4}>
         <Divider my={6} />
-
       </Section>
-
-     
     </Container>
   </Layout>
 )
