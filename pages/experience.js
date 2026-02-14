@@ -45,9 +45,9 @@ const Experience = () => (
           role="Graduate Research Assistant (Technical Lead)"
           timeline="Sep 2024 – Present"
           vibe="High-stakes cybersecurity research for the Navy. Managing scale, AI, and critical infrastructure."
-          narrative="Serving as Technical Lead for a $600k Office of Naval Research grant. Developing an automated framework using LLMs (Llama-based) to detect Zero-Day vulnerabilities in Programmable Logic Controllers (PLCs)."
+          narrative="Serving as Student assistant for a $600k Office of Naval Research grant. Developing an automated framework using LLMs (Llama-based) to detect Zero-Day vulnerabilities in Programmable Logic Controllers (PLCs)."
           details={[
-            { title: "Project 'OpsGuard' (The ONR Grant)", content: "Developing an automated framework using LLMs (Llama-based) to detect Zero-Day vulnerabilities in Programmable Logic Controllers (PLCs)." },
+            { title: "Project: The ONR Grant", content: "Developing an automated framework using LLMs (Llama-based) to detect Zero-Day vulnerabilities in Programmable Logic Controllers (PLCs)." },
             { title: "Infrastructure", content: "Architected the AWS data pipeline that ingests 1 million+ legacy logs daily. Replaced manual CSV parsing with automated Python ETL scripts, reducing data lag by 40%." },
             { title: "Fine-Tuning", content: "Implemented LoRA adapters to fine-tune open-source models on industrial code (Structured Text/Ladder Logic), improving detection accuracy for SCADA systems." }
           ]}

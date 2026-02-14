@@ -53,18 +53,18 @@ const Home = () => (
             borderColor="whiteAlpha.800"
             borderWidth={2}
             borderStyle="solid"
-            w="100px"
-            h="100px"
+            w="180px"
+            h="180px"
             display="inline-block"
             borderRadius="full"
             overflow="hidden"
           >
             <ProfileImage
-              src="/images/pf6.jpg"
+              src="/images/341_2.jpg"
               alt="Profile image"
               borderRadius="full"
-              width="100%"
-              height="100%"
+              width="200%"
+              height="200%"
             />
           </Box>
         </Box>
@@ -75,9 +75,9 @@ const Home = () => (
           About
         </Heading>
         <Paragraph>
-          Shorya is a Master&apos;s student in Computer Engineering at Texas A&M University with a strong focus on Distributed Systems, High-Performance Computing, and AI.
-          He has extensive experience in full-stack development, having built scalable applications and critical infrastructure.
-          Currently, he is conducting high-stakes cybersecurity research for the Navy, developing automated frameworks to detect Zero-Day vulnerabilities in industrial control systems.
+          I'm a Master&apos;s student in Computer Engineering at Texas A&M University with a strong focus on Distributed Systems, High-Performance Computing, and AI.
+          I have experience in full-stack development, having built scalable applications and critical infrastructure.
+          Currently, I'm conducting high-stakes cybersecurity research for the Navy and for my thesis, developing automated frameworks to detect Zero-Day vulnerabilities in industrial control systems.
           He has a knack for solving real-life problems with code, from robotics to enterprise data pipelines.
         </Paragraph>
         <Box align="center" my={4}>
@@ -99,17 +99,23 @@ const Home = () => (
           Bio
         </Heading>
         <BioSection>
-          <BioYear>2002</BioYear>
-          Born in Aligarh, Uttar Pradesh, India.
+          <BioYear>2026</BioYear>
+          (Expected) Master of Science in Computer Engineering from Texas A&M University (Current GPA: 3.65/4.00).
         </BioSection>
         <BioSection>
           <BioYear>2024</BioYear>
           Completed Bachelor of Technology in Computer Science and Engineering from Aligarh Muslim University (GPA: 3.65/4.00).
         </BioSection>
         <BioSection>
-          <BioYear>2026</BioYear>
-          (Expected) Master of Science in Computer Engineering from Texas A&M University (GPA: 3.65/4.00).
+          <BioYear>2022</BioYear>
+          Won National Level Underwate Robotics Challenge competing among 12 teams coming from different Universities Nationwide
         </BioSection>
+        <BioSection>
+          <BioYear>2002</BioYear>
+          Born in Aligarh, Uttar Pradesh, India.
+        </BioSection>
+        
+        
       </Section>
 
       <Section delay={0.3}>

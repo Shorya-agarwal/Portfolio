@@ -16,6 +16,7 @@ const Works = () => (
           <Section delay={index * 0.1} key={work.id}>
             <WorkGridItem id={work.id} title={work.title} thumbnail={work.thumbnail}>
               {work.description}
+              {work?.highlights}
             </WorkGridItem>
             <Box mt={2}>
               {work.stack.map(tech => (
