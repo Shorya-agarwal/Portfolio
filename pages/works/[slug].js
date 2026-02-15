@@ -27,7 +27,7 @@ const Work = ({ work }) => {
           {work.description}
         </P>
         <P>
-          {work.details}
+        <Box dangerouslySetInnerHTML={{ __html: work.details }} />
         </P>
 
         <List ml={4} my={4}>

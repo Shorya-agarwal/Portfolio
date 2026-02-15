@@ -1,7 +1,6 @@
 import Logo from './logo'
 import NextLink from 'next/link'
 import React from 'react'
-import { saveAs } from "file-saver";
 import {
   Container,
   Box,

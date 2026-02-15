@@ -75,9 +75,9 @@ const Home = () => (
           About
         </Heading>
         <Paragraph>
-          I'm a Master&apos;s student in Computer Engineering at Texas A&M University with a strong focus on Distributed Systems, High-Performance Computing, and AI.
+          I&apos;ma Master&apos;s student in Computer Engineering at Texas A&M University with a strong focus on Distributed Systems, High-Performance Computing, and AI.
           I have experience in full-stack development, having built scalable applications and critical infrastructure.
-          Currently, I'm conducting high-stakes cybersecurity research for the Navy and for my thesis, developing automated frameworks to detect Zero-Day vulnerabilities in industrial control systems.
+          Currently, I&apos;m conducting high-stakes cybersecurity research for the Navy and for my thesis, developing automated frameworks to detect Zero-Day vulnerabilities in industrial control systems.
           He has a knack for solving real-life problems with code, from robotics to enterprise data pipelines.
         </Paragraph>
         <Box align="center" my={4}>
