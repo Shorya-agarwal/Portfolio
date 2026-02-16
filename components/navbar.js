@@ -82,7 +82,7 @@ const Navbar = props => {
           <LinkItem href="/works" path={path}>
             Works
           </LinkItem>
-          <LinkItem href="https://drive.google.com/file/d/1P8_jQEGXIwmVS7nra4PyksOmIS91Nbev/view?usp=sharing" target="_blank" > View Resume </LinkItem>
+          <LinkItem href="https://drive.google.com/file/d/14RRcsBVsRPvVGPLfVhbJAV-yIIYpRDRE/view?usp=sharing" target="_blank" > View Resume </LinkItem>
         </Stack>
 
         <Box flex={1} align="right">
@@ -112,7 +112,7 @@ const Navbar = props => {
                 <NextLink href="/works" passHref>
                   <MenuItem as={Link}>Works</MenuItem>
                 </NextLink>
-               <MenuItem> <LinkItem href="https://drive.google.com/file/d/1P8_jQEGXIwmVS7nra4PyksOmIS91Nbev/view?usp=sharing" target="_blank" > View Resume </LinkItem> </MenuItem>
+               <MenuItem> <LinkItem href="https://drive.google.com/file/d/14RRcsBVsRPvVGPLfVhbJAV-yIIYpRDRE/view?usp=sharing" target="_blank" > View Resume </LinkItem> </MenuItem>
                <LinkItem href="https://github.com/Shorya-agarwal" target="_blank">
               <Button
                 variant="ghost"
