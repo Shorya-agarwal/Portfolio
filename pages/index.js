@@ -15,7 +15,7 @@ import Paragraph from '../components/paragraph'
 import { BioSection, BioYear } from '../components/bio'
 import Layout from '../components/layouts/article'
 import Section from '../components/section'
-import {IoLogoInstagram, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
+import { IoLogoInstagram, IoLogoGithub, IoLogoLinkedin } from 'react-icons/io5'
 import Image from 'next/image'
 
 const ProfileImage = chakra(Image, {
@@ -24,26 +24,24 @@ const ProfileImage = chakra(Image, {
 
 const Home = () => (
   <Layout>
-    <Container maxW  = 'container.sm'>
+    <Container maxW="container.lg">
       <Box
         borderRadius="lg"
         mb={6}
-        mr = {3}
-        p={2.5}
+        p={3}
         textAlign="center"
         bg={useColorModeValue('whiteAlpha.500', 'whiteAlpha.200')}
         css={{ backdropFilter: 'blur(10px)' }}
       >
-        Hello, I&apos;m an Software developer and Python programmer based in India!
+        Hello, I&apos;m a Software Engineer & Distributed Systems Researcher!
       </Box>
 
       <Box display={{ md: 'flex' }}>
-        <Box flexGrow={1}
-        w ='300px'>
+        <Box flexGrow={1}>
           <Heading as="h2" variant="page-title">
             Shorya Agarwal
           </Heading>
-          <p>Software Developer</p>
+          <p>Software Engineer | Full-Stack Development & Distributed Systems</p>
         </Box>
         <Box
           flexShrink={0}
@@ -55,18 +53,18 @@ const Home = () => (
             borderColor="whiteAlpha.800"
             borderWidth={2}
             borderStyle="solid"
-            w="100px"
-            h="100px"
+            w="180px"
+            h="180px"
             display="inline-block"
             borderRadius="full"
             overflow="hidden"
           >
             <ProfileImage
-              src="/images/pf6.jpg"
+              src="/images/341_2.jpg"
               alt="Profile image"
               borderRadius="full"
-              width="100%"
-              height="100%"
+              width="200%"
+              height="200%"
             />
           </Box>
         </Box>
@@ -74,55 +72,50 @@ const Home = () => (
 
       <Section delay={0.1}>
         <Heading as="h3" variant="section-title">
-          Work
+          About
         </Heading>
         <Paragraph>
-          Shorya is a full-stack developer based in India with a
-          passion for building full stack web apps he wants. He has a knack
-          for robotics and different microcontrollers, from planning and designing all the
-          way to solving real-life problems with code. When not online, he loves watching movies.
-           {/* Currently, he is living off of his own
-          product called{' '}
-          <NextLink href="/works/inkdrop" passHref scroll={false}>
-            <Link>Inkdrop</Link>
-          </NextLink>
-          . He publishes content for marketing his products and his YouTube
-          channel called &quot;
-          <NextLink href="https://www.youtube.com/devaslife" passHref>
-            <Link target="_blank">Dev as Life</Link>
-          </NextLink>
-          &quot; has more than 100k subscribers. */}
+          I&apos;ma Master&apos;s student in Computer Engineering at Texas A&M University with a strong focus on Distributed Systems, High-Performance Computing, and AI.
+          I have experience in full-stack development, having built scalable applications and critical infrastructure.
+          Currently, I&apos;m conducting high-stakes cybersecurity research for the Navy and for my thesis, developing automated frameworks to detect Zero-Day vulnerabilities in industrial control systems.
+          He has a knack for solving real-life problems with code, from robotics to enterprise data pipelines.
         </Paragraph>
         <Box align="center" my={4}>
+          <NextLink href="/experience" passHref scroll={false}>
+            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal" mr={4}>
+              Professional Experience
+            </Button>
+          </NextLink>
           <NextLink href="/works" passHref scroll={false}>
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-              My portfolio
+            <Button rightIcon={<ChevronRightIcon />} variant="outline" colorScheme="teal">
+              View Projects
             </Button>
           </NextLink>
         </Box>
       </Section>
-      {/*   chakra-text*/}
+
       <Section delay={0.2}>
         <Heading as="h3" variant="section-title">
           Bio
         </Heading>
         <BioSection>
-          <BioYear>2002                                                                          </BioYear>
-          Born in Aligarh , Uttar Pradesh India
+          <BioYear>2026</BioYear>
+          (Expected) Master of Science in Computer Engineering from Texas A&M University (Current GPA: 3.65/4.00).
         </BioSection>
         <BioSection>
-        {/* Master&apos;s */}
-          <BioYear>2020                                                                          </BioYear>
-          Completed the Schooling till class 12th from Sayed Hamid Senior Secondary School Boys, Aligarh Muslim University
+          <BioYear>2024</BioYear>
+          Completed Bachelor of Technology in Computer Science and Engineering from Aligarh Muslim University (GPA: 3.65/4.00).
         </BioSection>
-        {/* <BioSection>
-          <BioYear>2020</BioYear>
-          Worked at Yahoo! Japan (ヤフー株式会社入社)
-        </BioSection> */}
         <BioSection>
-          <BioYear>2020 to present</BioYear>
-          Started My graduation in Bachelor Of technology with Computer Enginenring as major
+          <BioYear>2022</BioYear>
+          Won National Level Underwate Robotics Challenge competing among 12 teams coming from different Universities Nationwide
         </BioSection>
+        <BioSection>
+          <BioYear>2002</BioYear>
+          Born in Aligarh, Uttar Pradesh, India.
+        </BioSection>
+        
+        
       </Section>
 
       <Section delay={0.3}>
@@ -130,9 +123,7 @@ const Home = () => (
           I ♥
         </Heading>
         <Paragraph>
-          Movies, Music,
-            Photography
-          , Robotics, Machine Learning, Technology
+          Distributed Systems, Robotics, Machine Learning, Photography, Movies, Music.
         </Paragraph>
       </Section>
 
@@ -153,27 +144,16 @@ const Home = () => (
             </Link>
           </ListItem>
           <ListItem>
-            <Link href="https://www.linkedin.com/in/shorya-agarwal-7b1751218/" target="_blank">
+            <Link href="https://linkedin.com/in/shoryaag" target="_blank">
               <Button
                 variant="ghost"
                 colorScheme="teal"
                 leftIcon={<IoLogoLinkedin />}
               >
-                Shorya-agarwal
+                @shoryaag
               </Button>
             </Link>
           </ListItem>
-          {/* <ListItem>
-            <Link href="https://twitter.com/craftzdog" target="_blank">
-              <Button
-                variant="ghost"
-                colorScheme="teal"
-                leftIcon={<IoLogoTwitter />}
-              >
-                @craftzdog (日本語)
-              </Button>
-            </Link>
-          </ListItem> */}
           <ListItem>
             <Link href="https://www.instagram.com/shorya_agarwal_/" target="_blank">
               <Button
@@ -186,31 +166,6 @@ const Home = () => (
             </Link>
           </ListItem>
         </List>
-
-        {/* <SimpleGrid columns={[1, 2, 2]} gap={6}>
-          <GridItem
-            href="https://www.youtube.com/devaslife"
-            title="Dev as Life"
-            thumbnail={thumbYouTube}
-          >
-            My YouTube channel (&gt;100k subs)
-          </GridItem>
-          <GridItem
-            href="https://www.inkdrop.app/"
-            title="Inkdrop"
-            thumbnail={thumbInkdrop}
-          >
-            A Markdown note-taking app
-          </GridItem>
-        </SimpleGrid> */}
-
-        {/* <Box align="center" my={4}>
-          <NextLink href="/posts" passHref scroll={false}>
-            <Button rightIcon={<ChevronRightIcon />} colorScheme="teal">
-              Popular posts
-            </Button>
-          </NextLink>
-        </Box> */}
       </Section>
     </Container>
   </Layout>

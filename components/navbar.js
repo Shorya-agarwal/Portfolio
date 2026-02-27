@@ -1,7 +1,6 @@
 import Logo from './logo'
 import NextLink from 'next/link'
 import React from 'react'
-import { saveAs } from "file-saver";
 import {
   Container,
   Box,
@@ -10,6 +9,7 @@ import {
   Heading,
   Flex,
   Menu,
+  Button,
   MenuItem,
   MenuList,
   MenuButton,
@@ -18,7 +18,7 @@ import {
 } from '@chakra-ui/react'
 import { HamburgerIcon } from '@chakra-ui/icons'
 import ThemeToggleButton from './theme-toggle-button'
-// import { IoLogoGithub } from 'react-icons/io5'
+import { IoLogoGithub } from 'react-icons/io5'
 
 const LinkItem = ({ href, path, target, children, ...props }) => {
   const active = path === href
@@ -37,13 +37,13 @@ const LinkItem = ({ href, path, target, children, ...props }) => {
     </NextLink>
   )
 }
-const saveFile = () => {
-  saveAs(
-    // "./public/ShoryaAgarwalresume.pdf",
-    "https://drive.google.com/file/d/1IiKj8zYNMc-KPQzrr-6xMdZTai8GOxKi/view?usp=sharing",
-    "example.pdf"
-  );
-};
+// const saveFile = () => {
+//   saveAs(
+//     // "./public/ShoryaAgarwalresume.pdf",
+//     "https://drive.google.com/file/d/1P8_jQEGXIwmVS7nra4PyksOmIS91Nbev/view?usp=sharing",
+//     "example.pdf"
+//   );
+// };
 const Navbar = props => {
   const { path } = props
 
@@ -60,7 +60,7 @@ const Navbar = props => {
       <Container
         display="flex"
         p={2}
-        maxW="container.md"
+        maxW="container.xl"
         wrap="wrap"
         align="center"
         justify="space-between"
@@ -82,10 +82,19 @@ const Navbar = props => {
           <LinkItem href="/works" path={path}>
             Works
           </LinkItem>
-          <button onClick={saveFile}>View Resume</button>
+          <LinkItem href="https://drive.google.com/file/d/14RRcsBVsRPvVGPLfVhbJAV-yIIYpRDRE/view?usp=sharing" target="_blank" > View Resume </LinkItem>
         </Stack>
 
         <Box flex={1} align="right">
+        <LinkItem href="https://github.com/Shorya-agarwal" target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<IoLogoGithub />}
+              >
+                Shorya-agarwal Github
+              </Button>
+            </LinkItem>
           <ThemeToggleButton />
 
           <Box ml={2} display={{ base: 'inline-block', md: 'none' }}>
@@ -103,16 +112,16 @@ const Navbar = props => {
                 <NextLink href="/works" passHref>
                   <MenuItem as={Link}>Works</MenuItem>
                 </NextLink>
-               <MenuItem> <button onClick={saveFile}>View Resume</button> </MenuItem>
-                {/* <NextLink href="/posts" passHref>
-                  <MenuItem as={Link}>Posts</MenuItem>
-                </NextLink> */}
-                {/* <MenuItem
-                  as={Link}
-                  href="https://github.com/craftzdog/craftzdog-homepage"
-                >
-                  View Source
-                </MenuItem> */}
+               <MenuItem> <LinkItem href="https://drive.google.com/file/d/14RRcsBVsRPvVGPLfVhbJAV-yIIYpRDRE/view?usp=sharing" target="_blank" > View Resume </LinkItem> </MenuItem>
+               <LinkItem href="https://github.com/Shorya-agarwal" target="_blank">
+              <Button
+                variant="ghost"
+                colorScheme="teal"
+                leftIcon={<IoLogoGithub />}
+              >
+                Shorya-agarwal Github
+              </Button>
+            </LinkItem>
               </MenuList>
             </Menu>
           </Box>
